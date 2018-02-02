@@ -1,0 +1,45 @@
+{
+  "name": "web-tests-tcrm",
+  "version": "1.0.0",
+  "description": "test for TCRM project",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "protractor settings/conf.js",
+    "preprotractor": "webdriver-manager update",
+    "protractor": "npm run test"
+  },
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5","es2015.core"]
+  },
+  "dependencies": {
+    "protractor": "^5.2.2",
+    "testrail-api": "^1.2.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.4",
+    "@types/node": "^6.0.96",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "http": "0.0.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "lodash": "^4.17.4",
+    "mysql": "^2.15.0",
+    "oracledb": "^2.0.15",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "request": "^2.83.0",
+    "superagent": "^3.8.2",
+    "utf8": "^3.0.0",
+    "xml-parser": "^1.2.1"
+  },
+  "keywords": [
+    "tests",
+    "e2e",
+    "protractor",
+    "webdriver"
+  ]
+}

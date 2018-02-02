@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5", // к какому стандарту приводится js
+    "module": "commonjs", //менеждер модулей commonjs-CommonJS для system-SystemJS
+    "moduleResolution": "node", // стратегия получения обьявленых файлов (из ode-modules)
+    "sourceMap": false, //генерирует map айлы вместе с js
+    "emitDecoratorMetadata": false, //применение декораторов?
+    "experimentalDecorators": true, //разрешает применение эксперементального es7
+    "removeComments": false,// копирует комментарии из ts в js
+    "noImplicitAny": false, //если тип файла явно не указан ошибки не будет будет присвоен any
+    "noEmitOnError": true, // не создает js если в ts ошибка
+    "outDir": "tmp", //куда компилируются файлы js
+    "types": ["jasmine", "node"], // к каким еще файлам еще можно применять
+    "lib": ["es2015", "dom"] // какие библиотеки используются
+  },
+  "compileOnSave": true ,// компиляция при каждом сохранении
+  "buildOnSave": false,
+  "exclude": [ //файлы которые не входят в компиляцию
+    "node_modules"
+//    "typings"
+  ]
+}
