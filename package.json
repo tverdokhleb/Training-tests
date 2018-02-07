@@ -7,7 +7,7 @@
     "test": "protractor settings/conf.js",
     "preprotractor": "webdriver-manager update",
     "protractor": "npm run test",
-    "results": "allure generate settings/allure-results",
+    "results": "allure generate allure-results",
     "posttest": "npm run results"
   },
   "compilerOptions": {
