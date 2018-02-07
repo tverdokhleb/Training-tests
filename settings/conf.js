@@ -1,6 +1,12 @@
 exports.config = {
     directConnection: true,
-    framework: 'jasmine',
+    framework: 'jasmine2',
+    onPrepare: function() {
+        const AllureReporter = require('jasmine-allure-reporter');
+        jasmine.getEnv().addReporter(new AllureReporter({
+            resultsDir: 'allure-results'
+        }));
+    },
     // seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['../tmp/settings/spec.js'],
     //SELENIUM_PROMISE_MANAGER: false,
