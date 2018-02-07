@@ -6,7 +6,9 @@
     "pretest": "tsc",
     "test": "protractor settings/conf.js",
     "preprotractor": "webdriver-manager update",
-    "protractor": "npm run test"
+    "protractor": "npm run test",
+    "results": "allure generate settings/allure-results",
+    "posttest": "npm run results"
   },
   "compilerOptions": {
     "target": "es5",
